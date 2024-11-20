@@ -55,8 +55,6 @@ WR command 1 , send 21
 
 
 
-![image](https://github.com/released/RL78_F24_IICA0_I2C_Master/blob/main/LA_RD_cmd.jpg)
-
 WR command 2 , send 01 
 
 ![image](https://github.com/released/RL78_F24_IICA0_I2C_Master/blob/main/LA_WR_2_cmd_01.jpg)
