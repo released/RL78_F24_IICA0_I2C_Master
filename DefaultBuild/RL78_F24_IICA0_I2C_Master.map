@@ -1,0 +1,1762 @@
+Renesas Optimizing Linker (W3.06.00 )             20-Nov-2024 15:58:15
+
+*** Options ***
+
+-MAKEUD=DefaultBuild\RL78_F24_IICA0_I2C_Master.lk.ud
+-subcommand=DefaultBuild\RL78_F24_IICA0_I2C_Master.clnk
+-Input=DefaultBuild\f24opt.obj
+-Input=DefaultBuild\main.obj
+-Input=DefaultBuild\Config_PORT.obj
+-Input=DefaultBuild\Config_PORT_user.obj
+-Input=DefaultBuild\Config_TAU0_1.obj
+-Input=DefaultBuild\Config_TAU0_1_user.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\r_cg_tau_common.obj
+-Input=DefaultBuild\hdwinit.obj
+-Input=DefaultBuild\r_bsp_init.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\r_bsp_common.obj
+-Input=DefaultBuild\r_bsp_common_ccrl.obj
+-Input=DefaultBuild\mcu_clocks.obj
+-Input=DefaultBuild\Pin.obj
+-Input=DefaultBuild\custom_func.obj
+-Input=DefaultBuild\misc_config.obj
+-Input=DefaultBuild\Config_UART0.obj
+-Input=DefaultBuild\Config_UART0_user.obj
+-Input=DefaultBuild\r_cg_sau_common.obj
+-Input=DefaultBuild\Config_INTC.obj
+-Input=DefaultBuild\Config_INTC_user.obj
+-Input=DefaultBuild\Config_IICA0.obj
+-Input=DefaultBuild\Config_IICA0_user.obj
+-Input=DefaultBuild\r_cg_iica_common.obj
+-Input=DefaultBuild\CRC8_SAE_J1850_ZERO.obj
+-Input=DefaultBuild\simple_i2c_driver.obj
+-SECURITY_ID=00000000000000000000000000000000
+-FLASH_SECURITY_ID=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR7F124FPJ.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\RL78_F24_IICA0_I2C_Master.abs
+-OCDBG=A5
+-SECURITY_OPT_BYTE=FE
+-DEBUG_MONITOR=3FE00-3FFFF
+-USER_OPT_BYTE=EFE3E8
+-OCDTR
+-LISt=DefaultBuild\RL78_F24_IICA0_I2C_Master.map
+-SHow=ALL
+-AUTO_SECTION_LAYOUT
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-Total_size
+-NOLOgo
+-LIBrary=DefaultBuild\RL78_F24_IICA0_I2C_Master.lib
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000093        14   2
+.init_array
+                                  00000094  00000094         0   2
+.sdata
+                                  00000080  00000080         0   2
+.option_byte
+                                  000000c0  000000c4         5   1
+.RLIB
+                                  000000c5  000000c5         0   1
+.security_id
+                                  000000c6  000000d5        10   1
+.flash_security_id
+                                  000000d6  000000e5        10   1
+.monitor1
+                                  000000e6  000000ef         a   1
+.data
+                                  000000f0  00000136        47   2
+.text
+                                  00000137  000002dc       1a6   1
+.textf
+                                  000002dd  00001b78      189c   1
+.SLIB
+                                  00001b79  00004b2e      2fb6   1
+.const
+                                  00005000  000054f2       4f3   2
+.monitor2
+                                  0003fe00  0003ffff       200   1
+.bss
+                                  000f9f00  000f9f9d        9e   2
+.dataR
+                                  000f9f9e  000f9fe4        47   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  000000e5 Byte(s)
+ROMDATA SECTION:  000007fd Byte(s)
+PROGRAM SECTION:  000049f8 Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+    STRUCT                                      SIZE
+      MEMBER                        ADDR        SIZE    INFO
+
+SECTION=.vect
+FILE=rlink_generates_05
+                                  00000000  0000007f        80
+
+SECTION=.constf
+FILE=_REL_print
+                                  00000080  00000093        14
+
+SECTION=.option_byte
+FILE=rlink_generates_01
+                                  000000c0  000000c4         5
+
+SECTION=.security_id
+FILE=rlink_generates_03
+                                  000000c6  000000d5        10
+
+SECTION=.flash_security_id
+FILE=rlink_generates_04
+                                  000000d6  000000e5        10
+
+SECTION=.monitor1
+FILE=rlink_generates_02
+                                  000000e6  000000ef         a
+
+SECTION=.data
+FILE=DefaultBuild\custom_func.obj
+                                  000000f0  00000136        47
+
+SECTION=.text
+FILE=DefaultBuild\Config_TAU0_1_user.obj
+                                  00000137  00000150        1a
+  _r_Config_TAU0_1_interrupt@1
+                                  00000137        1a   func ,l         0
+FILE=DefaultBuild\cstart.obj
+                                  00000151  000001cb        7b
+  _start
+                                  00000151         0   none ,g         0
+  _exit
+                                  000001c9         0   none ,g         1
+  _atexit
+                                  000001cb         0   none ,g         0
+FILE=DefaultBuild\r_bsp_common_ccrl.obj
+                                  000001cc  000001d7         c
+  _delay_wait
+                                  000001cc         0   none ,g         0
+  loop
+                                  000001cc         0   none ,l         2
+  check
+                                  000001d3         0   none ,l         1
+  _exit
+                                  000001d7         0   none ,l         0
+FILE=DefaultBuild\Config_UART0_user.obj
+                                  000001d8  0000028c        b5
+  _r_Config_UART0_interrupt_send@1
+                                  000001d8        39   func ,l         0
+  _r_Config_UART0_interrupt_receive@1
+                                  00000211        7c   func ,l         0
+FILE=DefaultBuild\Config_INTC_user.obj
+                                  0000028d  000002a8        1c
+  _r_Config_INTC_intp0_interrupt@1
+                                  0000028d        1a   func ,l         0
+  _r_Config_INTC_intp12_interrupt@1
+                                  000002a7         2   func ,l         0
+FILE=DefaultBuild\Config_IICA0_user.obj
+                                  000002a9  000002dc        34
+  _r_Config_IICA0_interrupt@1
+                                  000002a9        34   func ,l         0
+
+SECTION=.textf
+FILE=DefaultBuild\main.obj
+                                  000002dd  000002e6         a
+  _main
+                                  000002dd         a   func ,g         1
+FILE=DefaultBuild\Config_PORT.obj
+                                  000002e7  000002fa        14
+  _R_Config_PORT_Create
+                                  000002e7        10   func ,g         1
+  _R_Config_PORT_ReadPmnValues
+                                  000002f7         4   func ,g         0
+FILE=DefaultBuild\Config_PORT_user.obj
+                                  000002fb  000002fb         1
+  _R_Config_PORT_Create_UserInit
+                                  000002fb         1   func ,g         1
+FILE=DefaultBuild\Config_TAU0_1.obj
+                                  000002fc  0000036c        71
+  _R_Config_TAU0_1_Create
+                                  000002fc        51   func ,g         1
+  _R_Config_TAU0_1_Start
+                                  0000034d        10   func ,g         1
+  _R_Config_TAU0_1_Stop
+                                  0000035d        10   func ,g         0
+FILE=DefaultBuild\Config_TAU0_1_user.obj
+                                  0000036d  0000036d         1
+  _R_Config_TAU0_1_Create_UserInit
+                                  0000036d         1   func ,g         1
+FILE=DefaultBuild\r_cg_systeminit.obj
+                                  0000036e  00000382        15
+  _R_Systeminit
+                                  0000036e        15   func ,g         1
+FILE=DefaultBuild\r_cg_tau_common.obj
+                                  00000383  000003a4        22
+  _R_TAU0_Create
+                                  00000383         9   func ,g         1
+  _R_TAU1_Create
+                                  0000038c         5   func ,g         0
+  _R_TAU0_Set_PowerOn
+                                  00000391         5   func ,g         0
+  _R_TAU0_Set_PowerOff
+                                  00000396         5   func ,g         0
+  _R_TAU1_Set_PowerOn
+                                  0000039b         5   func ,g         0
+  _R_TAU1_Set_PowerOff
+                                  000003a0         5   func ,g         0
+FILE=DefaultBuild\hdwinit.obj
+                                  000003a5  000003ba        16
+  _hdwinit
+                                  000003a5         d   func ,g         1
+  _output_ports_configure@1
+                                  000003b2         2   func ,l         1
+  _interrupts_configure@1
+                                  000003b4         2   func ,l         1
+  _peripheral_modules_enable@1
+                                  000003b6         5   func ,l         1
+FILE=DefaultBuild\r_bsp_init.obj
+                                  000003bb  000003e2        28
+  _bsp_init_system
+                                  000003bb        23   func ,g         1
+  _bsp_init_hardware
+                                  000003de         5   func ,g         1
+FILE=DefaultBuild\stkinit.obj
+                                  000003e3  00000426        44
+  _stkinit
+                                  000003e3         0   none ,g         1
+  LSTINIT1
+                                  000003f1         0   none ,l         1
+  LSTINIT2
+                                  0000041b         0   none ,l         2
+  LSTINIT3
+                                  00000426         0   none ,l         2
+FILE=DefaultBuild\r_bsp_common.obj
+                                  00000427  00000437        11
+  _R_BSP_GetFclkFreqHz
+                                  00000427        11   func ,g         0
+FILE=DefaultBuild\mcu_clocks.obj
+                                  00000438  000006b1       27a
+  _get_fclk_freq_hz
+                                  00000438       216   func ,g         1
+  _mcu_clock_setup
+                                  0000064e        64   func ,g         1
+FILE=DefaultBuild\Pin.obj
+                                  000006b2  000006d8        27
+  _R_Pins_Create
+                                  000006b2        27   func ,g         0
+FILE=DefaultBuild\custom_func.obj
+                                  000006d9  00000ff3       91b
+  _set_TIMER_PERIOD_1000MS
+                                  000006d9         5   func ,g         1
+  _reset_TIMER_PERIOD_1000MS
+                                  000006de         5   func ,g         1
+  _Is_TIMER_PERIOD_1000MS_Trig
+                                  000006e3         d   func ,g         1
+  _btn_get_tick
+                                  000006f0         8   func ,g         2
+  _btn_set_tick
+                                  000006f8         8   func ,g         3
+  _btn_tick_counter
+                                  00000700        11   func ,g         1
+  _get_tick
+                                  00000711         8   func ,g         7
+  _set_tick
+                                  00000719         8   func ,g         1
+  _tick_counter
+                                  00000721        11   func ,g         1
+  _delay_ms
+                                  00000732        4d   func ,g        16
+  _IICA0_send_seq_cmd
+                                  0000077f       53c   func ,g         1
+  _Timer_1ms_IRQ
+                                  00000cbb        1c   func ,g         1
+  _LED_Toggle
+                                  00000cd7        19   func ,g         1
+  _loop
+                                  00000cf0        2f   func ,g         1
+  _Button_Process_long_counter
+                                  00000d1f         f   func ,g         1
+  _Button_Process_in_polling
+                                  00000d2e        95   func ,g         1
+  _Button_Process_in_IRQ
+                                  00000dc3         5   func ,g         1
+  _UARTx_Process
+                                  00000dc8        b0   func ,g         1
+  _check_reset_source
+                                  00000e78        eb   func ,g         0
+  __reset_by_illegal_instruction
+                                  00000f63        16   func ,g         1
+  __reset_by_illegal_memory_access
+                                  00000f79        13   func ,g         1
+  _RL78_soft_reset
+                                  00000f8c        1c   func ,g         2
+  _putchar
+                                  00000fa8        1a   func ,g         4
+  _hardware_init
+                                  00000fc2        32   func ,g         1
+FILE=DefaultBuild\misc_config.obj
+                                  00000ff4  0000128f       29c
+  _compare_buffer
+                                  00000ff4        9f   func ,g         0
+  _reset_buffer
+                                  00001093        28   func ,g         0
+  _copy_buffer
+                                  000010bb        34   func ,g         0
+  _dump_buffer
+                                  000010ef        81   func ,g         0
+  _dump_buffer_hex
+                                  00001170       120   func ,g         0
+FILE=DefaultBuild\Config_UART0.obj
+                                  00001290  000013c7       138
+  _R_Config_UART0_Create
+                                  00001290        8b   func ,g         1
+  _R_Config_UART0_Start
+                                  0000131b        28   func ,g         1
+  _R_Config_UART0_Stop
+                                  00001343        1f   func ,g         0
+  _R_Config_UART0_Send
+                                  00001362        3a   func ,g         0
+  _R_Config_UART0_Receive
+                                  0000139c        2c   func ,g         0
+FILE=DefaultBuild\Config_UART0_user.obj
+                                  000013c8  000013da        13
+  _R_Config_UART0_Create_UserInit
+                                  000013c8         1   func ,g         1
+  _r_Config_UART0_callback_sendend@1
+                                  000013c9         1   func ,l         1
+  _r_Config_UART0_callback_receiveend@1
+                                  000013ca         1   func ,l         1
+  _r_Config_UART0_callback_error@1
+                                  000013cb         5   func ,l         1
+  _r_Config_UART0_callback_softwareoverrun@1
+                                  000013d0         b   func ,l         1
+FILE=DefaultBuild\r_cg_sau_common.obj
+                                  000013db  000013fc        22
+  _R_SAU0_Create
+                                  000013db         9   func ,g         1
+  _R_SAU1_Create
+                                  000013e4         5   func ,g         0
+  _R_SAU0_Set_PowerOn
+                                  000013e9         5   func ,g         0
+  _R_SAU0_Set_PowerOff
+                                  000013ee         5   func ,g         0
+  _R_SAU1_Set_PowerOn
+                                  000013f3         5   func ,g         0
+  _R_SAU1_Set_PowerOff
+                                  000013f8         5   func ,g         0
+FILE=DefaultBuild\Config_INTC.obj
+                                  000013fd  00001448        4c
+  _R_Config_INTC_Create
+                                  000013fd        30   func ,g         1
+  _R_Config_INTC_INTP0_Start
+                                  0000142d         7   func ,g         1
+  _R_Config_INTC_INTP0_Stop
+                                  00001434         7   func ,g         0
+  _R_Config_INTC_INTP12_Start
+                                  0000143b         7   func ,g         0
+  _R_Config_INTC_INTP12_Stop
+                                  00001442         7   func ,g         0
+FILE=DefaultBuild\Config_INTC_user.obj
+                                  00001449  00001449         1
+  _R_Config_INTC_Create_UserInit
+                                  00001449         1   func ,g         1
+FILE=DefaultBuild\Config_IICA0.obj
+                                  0000144a  000015b4       16b
+  _R_Config_IICA0_Create
+                                  0000144a        69   func ,g         1
+  _R_Config_IICA0_Stop
+                                  000014b3         5   func ,g         0
+  _R_Config_IICA0_StopCondition
+                                  000014b8         5   func ,g         1
+  _R_Config_IICA0_Master_Send
+                                  000014bd        7a   func ,g         1
+  _R_Config_IICA0_Master_Receive
+                                  00001537        7e   func ,g         1
+FILE=DefaultBuild\Config_IICA0_user.obj
+                                  000015b5  000016c6       112
+  _R_Config_IICA0_Create_UserInit
+                                  000015b5         1   func ,g         1
+  _r_Config_IICA0_callback_master_sendend@1
+                                  000015b6         a   func ,l         2
+  _r_Config_IICA0_callback_master_receiveend@1
+                                  000015c0         a   func ,l         1
+  _r_Config_IICA0_callback_master_error@1
+                                  000015ca         b   func ,l         3
+  _r_Config_IICA0_master_handler@1
+                                  000015d5        f2   func ,l         1
+FILE=DefaultBuild\r_cg_iica_common.obj
+                                  000016c7  000016d0         a
+  _R_IICA0_Set_PowerOn
+                                  000016c7         5   func ,g         0
+  _R_IICA0_Set_PowerOff
+                                  000016cc         5   func ,g         0
+FILE=DefaultBuild\CRC8_SAE_J1850_ZERO.obj
+                                  000016d1  00001826       156
+  _Utils_BitReflect
+                                  000016d1        82   func ,g         2
+  _Crc8Base
+                                  00001753        ad   func ,g         1
+  _Crc8_saeJ1850Zero
+                                  00001800        27   func ,g         b
+FILE=DefaultBuild\simple_i2c_driver.obj
+                                  00001827  00001b78       352
+  _drv_IICA0_read
+                                  00001827        4a   func ,g         1
+  _drv_IICA0_write
+                                  00001871        4a   func ,g         2
+  _drv_Is_IICA0_bus_busy
+                                  000018bb         c   func ,g         3
+  _drv_IICA0_callback_error
+                                  000018c7        22   func ,g         1
+  _drv_set_IICA0_receive_flag
+                                  000018e9         c   func ,g         2
+  _drv_get_IICA0_receive_flag
+                                  000018f5         d   func ,g         1
+  _drv_set_IICA0_send_flag
+                                  00001902         c   func ,g         3
+  _drv_get_IICA0_send_flag
+                                  0000190e         d   func ,g         2
+  _IICA0_read
+                                  0000191b       149   func ,g         b
+  _IICA0_write
+                                  00001a64       115   func ,g         b
+
+SECTION=.SLIB
+FILE=_COM_lshl
+                                  00001b79  00001b93        1b
+  __COM_lshl
+                                  00001b82         0   none ,g         1
+FILE=memset
+                                  00001b94  00001ba1         e
+  _memset
+                                  00001b94         0   none ,g         1
+FILE=printf
+                                  00001ba2  00001c5e        bd
+  _printf
+                                  00001ba2        b8   func ,g        1d
+  __REL_pc@1
+                                  00001c5a         5   func ,l         2
+FILE=printf_tiny
+                                  00001c5f  00001d19        bb
+  _printf_tiny
+                                  00001c5f        b6   func ,g         a
+  __REL_pc@1
+                                  00001d15         5   func ,l         2
+FILE=_REL_print
+                                  00001d1a  00003d0f      1ff6
+  __REL_print
+                                  00001d1a      10e7   func ,g         1
+  __REL_fltprn@1
+                                  00002e01       93e   func ,l         1
+  __REL_henkan1@1
+                                  0000373f        28   func ,l         4
+  __REL_henkan2@1
+                                  00003767        33   func ,l         1
+  __REL_pri@1
+                                  0000379a       298   func ,l         3
+  __REL_fltgeti@1
+                                  00003a32       19d   func ,l         2
+  __REL_inmod@1
+                                  00003bcf       141   func ,l         2
+FILE=_REL_print_tiny
+                                  00003d10  0000430d       5fe
+  __REL_print_tiny
+                                  00003d10       5fe   func ,g         1
+FILE=_COM_fdiv
+                                  0000430e  0000443b       12e
+  __COM_fdiv
+                                  0000436d         0   none ,g         2
+FILE=_COM_feq
+                                  0000443c  00004451        16
+  __COM_feq
+                                  0000443c         0   none ,g         2
+FILE=_COM_fge
+                                  00004452  00004467        16
+  __COM_fge
+                                  00004452         0   none ,g         2
+FILE=_COM_flt
+                                  00004468  0000447d        16
+  __COM_flt
+                                  00004468         0   none ,g         4
+FILE=_COM_fmul
+                                  0000447e  0000456a        ed
+  __COM_fmul
+                                  000044c9         0   none ,g         3
+FILE=_COM_fne
+                                  0000456b  0000457b        11
+  __COM_fne
+                                  0000456b         0   none ,g         3
+FILE=_COM_ftosl
+                                  0000457c  00004583         8
+  __COM_ftosl
+                                  0000457c         0   none ,g         1
+FILE=_COM_sidiv
+                                  00004584  000045a5        22
+  __COM_sidiv
+                                  00004586         0   none ,g         1
+FILE=_COM_sirem
+                                  000045a6  000045c5        20
+  __COM_sirem
+                                  000045a6         0   none ,g         1
+FILE=_COM_ulldiv
+                                  000045c6  000045ef        2a
+  __COM_ulldiv
+                                  000045c6         0   none ,g         1
+FILE=_COM_ullrem
+                                  000045f0  00004620        31
+  __COM_ullrem
+                                  000045f0         0   none ,g         1
+FILE=isdigit
+                                  00004621  0000462a         a
+  _isdigit
+                                  00004621         0   none ,g         4
+FILE=_REL_f_inf
+                                  0000462b  00004632         8
+  __REL_f_inf
+                                  0000462b         0   none ,g         4
+FILE=_REL_f_norm
+                                  00004633  00004642        10
+  __REL_f_norm
+                                  00004633         0   none ,g         3
+FILE=_REL_f_round
+                                  00004643  00004655        13
+  __REL_f_round
+                                  00004643         0   none ,g         2
+FILE=_REL_fcmp
+                                  00004656  0000468d        38
+  __REL_fcmp
+                                  00004656         0   none ,g         3
+FILE=_REL_fordered_core
+                                  0000468e  000046a9        1c
+  __REL_fordered_core
+                                  0000468e         0   none ,g         3
+FILE=_REL_ftol
+                                  000046aa  000046de        35
+  __REL_ftol
+                                  000046aa         0   none ,g         1
+FILE=_REL_lldiv
+                                  000046df  000048e4       206
+  __REL_lldiv
+                                  000046fb         0   none ,g         1
+FILE=_REL_llrem
+                                  000048e5  00004ae8       204
+  __REL_llrem
+                                  00004902         0   none ,g         1
+FILE=_REL_ltosl
+                                  00004ae9  00004b0d        25
+  __REL_ltosl
+                                  00004ae9         0   none ,g         1
+FILE=_COM_lshr
+                                  00004b0e  00004b2e        21
+  __COM_lshr
+                                  00004b18         0   none ,g         1
+
+SECTION=.const
+FILE=DefaultBuild\mcu_clocks.obj
+                                  00005000  0000507f        80
+  _g_fih_hz
+                                  00005000        80   data ,g         1
+FILE=DefaultBuild\custom_func.obj
+                                  00005080  000051bd       13e
+  _device_addr
+                                  00005080         1   data ,g        16
+  _Reserved
+                                  00005081         1   data ,g         b
+  _illegal_Instruction@3@_reset_by_illegal_instruction
+                                  000051a1         1   data ,l         1
+  ___T1000000@4@hardware_init
+                                  000051a2         e   data ,l         1
+FILE=DefaultBuild\misc_config.obj
+                                  000051be  0000524f        92
+FILE=DefaultBuild\CRC8_SAE_J1850_ZERO.obj
+                                  00005250  0000534f       100
+  _crc_table@1
+                                  00005250       100   data ,l         1
+FILE=DefaultBuild\simple_i2c_driver.obj
+                                  00005350  000054f2       1a3
+  ___T1000000@1@IICA0_read
+                                  000053a6         b   data ,l         2
+  ___T1000001@2@IICA0_write
+                                  00005468         c   data ,l         1
+
+SECTION=.monitor2
+FILE=rlink_generates_02
+                                  0003fe00  0003ffff       200
+
+SECTION=.bss
+FILE=DefaultBuild\custom_func.obj
+                                  000f9f00  000f9f03         4
+  _flag_PROJ_CTL
+                                  000f9f00         4   data ,g         f
+    struct flag_32bit {
+                                                   4
+      _flag_PROJ_CTL.bit0
+                                  000f9f00         2   unsigned int:1(7)
+      _flag_PROJ_CTL.bit1
+                                  000f9f00         2   unsigned int:1(6)
+      _flag_PROJ_CTL.bit2
+                                  000f9f00         2   unsigned int:1(5)
+      _flag_PROJ_CTL.bit3
+                                  000f9f00         2   unsigned int:1(4)
+      _flag_PROJ_CTL.bit4
+                                  000f9f00         2   unsigned int:1(3)
+      _flag_PROJ_CTL.bit5
+                                  000f9f00         2   unsigned int:1(2)
+      _flag_PROJ_CTL.bit6
+                                  000f9f00         2   unsigned int:1(1)
+      _flag_PROJ_CTL.bit7
+                                  000f9f00         2   unsigned int:1(0)
+      _flag_PROJ_CTL.bit8
+                                  000f9f01         2   unsigned int:1(7)
+      _flag_PROJ_CTL.bit9
+                                  000f9f01         2   unsigned int:1(6)
+      _flag_PROJ_CTL.bit10
+                                  000f9f01         2   unsigned int:1(5)
+      _flag_PROJ_CTL.bit11
+                                  000f9f01         2   unsigned int:1(4)
+      _flag_PROJ_CTL.bit12
+                                  000f9f01         2   unsigned int:1(3)
+      _flag_PROJ_CTL.bit13
+                                  000f9f01         2   unsigned int:1(2)
+      _flag_PROJ_CTL.bit14
+                                  000f9f01         2   unsigned int:1(1)
+      _flag_PROJ_CTL.bit15
+                                  000f9f01         2   unsigned int:1(0)
+      _flag_PROJ_CTL.bit16
+                                  000f9f02         2   unsigned int:1(7)
+      _flag_PROJ_CTL.bit17
+                                  000f9f02         2   unsigned int:1(6)
+      _flag_PROJ_CTL.bit18
+                                  000f9f02         2   unsigned int:1(5)
+      _flag_PROJ_CTL.bit19
+                                  000f9f02         2   unsigned int:1(4)
+      _flag_PROJ_CTL.bit20
+                                  000f9f02         2   unsigned int:1(3)
+      _flag_PROJ_CTL.bit21
+                                  000f9f02         2   unsigned int:1(2)
+      _flag_PROJ_CTL.bit22
+                                  000f9f02         2   unsigned int:1(1)
+      _flag_PROJ_CTL.bit23
+                                  000f9f02         2   unsigned int:1(0)
+      _flag_PROJ_CTL.bit24
+                                  000f9f03         2   unsigned int:1(7)
+      _flag_PROJ_CTL.bit25
+                                  000f9f03         2   unsigned int:1(6)
+      _flag_PROJ_CTL.bit26
+                                  000f9f03         2   unsigned int:1(5)
+      _flag_PROJ_CTL.bit27
+                                  000f9f03         2   unsigned int:1(4)
+      _flag_PROJ_CTL.bit28
+                                  000f9f03         2   unsigned int:1(3)
+      _flag_PROJ_CTL.bit29
+                                  000f9f03         2   unsigned int:1(2)
+      _flag_PROJ_CTL.bit30
+                                  000f9f03         2   unsigned int:1(1)
+      _flag_PROJ_CTL.bit31
+                                  000f9f03         2   unsigned int:1(0)
+    }
+FILE=DefaultBuild\misc_config.obj
+                                  000f9f04  000f9f04         1
+  _flag_MISC_CTL
+                                  000f9f04         1   data ,g         3
+    struct flag_8bit {
+                                                   1
+      _flag_MISC_CTL.bit0
+                                  000f9f04         1   unsigned char:1(7)
+      _flag_MISC_CTL.bit1
+                                  000f9f04         1   unsigned char:1(6)
+      _flag_MISC_CTL.bit2
+                                  000f9f04         1   unsigned char:1(5)
+      _flag_MISC_CTL.bit3
+                                  000f9f04         1   unsigned char:1(4)
+      _flag_MISC_CTL.bit4
+                                  000f9f04         1   unsigned char:1(3)
+      _flag_MISC_CTL.bit5
+                                  000f9f04         1   unsigned char:1(2)
+      _flag_MISC_CTL.bit6
+                                  000f9f04         1   unsigned char:1(1)
+      _flag_MISC_CTL.bit7
+                                  000f9f04         1   unsigned char:1(0)
+    }
+FILE=DefaultBuild\Config_UART0.obj
+                                  000f9f06  000f9f0f         a
+  _gp_uart0_tx_address
+                                  000f9f06         2   data ,g         5
+  _g_uart0_tx_count
+                                  000f9f08         2   data ,g         4
+  _gp_uart0_rx_address
+                                  000f9f0a         2   data ,g         3
+  _g_uart0_rx_count
+                                  000f9f0c         2   data ,g         4
+  _g_uart0_rx_length
+                                  000f9f0e         2   data ,g         3
+FILE=DefaultBuild\Config_IICA0.obj
+                                  000f9f10  000f9f1b         c
+  _g_iica0_master_status_flag
+                                  000f9f10         1   data ,g         5
+  _gp_iica0_rx_address
+                                  000f9f12         2   data ,g         3
+  _g_iica0_rx_len
+                                  000f9f14         2   data ,g         3
+  _g_iica0_rx_cnt
+                                  000f9f16         2   data ,g         4
+  _gp_iica0_tx_address
+                                  000f9f18         2   data ,g         5
+  _g_iica0_tx_cnt
+                                  000f9f1a         2   data ,g         7
+FILE=DefaultBuild\simple_i2c_driver.obj
+                                  000f9f1c  000f9f1d         2
+  _flag_IICA0_CTL
+                                  000f9f1c         2   data ,g         4
+    struct flag_16bit {
+                                                   2
+      _flag_IICA0_CTL.bit0
+                                  000f9f1c         2   unsigned short:1(7)
+      _flag_IICA0_CTL.bit1
+                                  000f9f1c         2   unsigned short:1(6)
+      _flag_IICA0_CTL.bit2
+                                  000f9f1c         2   unsigned short:1(5)
+      _flag_IICA0_CTL.bit3
+                                  000f9f1c         2   unsigned short:1(4)
+      _flag_IICA0_CTL.bit4
+                                  000f9f1c         2   unsigned short:1(3)
+      _flag_IICA0_CTL.bit5
+                                  000f9f1c         2   unsigned short:1(2)
+      _flag_IICA0_CTL.bit6
+                                  000f9f1c         2   unsigned short:1(1)
+      _flag_IICA0_CTL.bit7
+                                  000f9f1c         2   unsigned short:1(0)
+      _flag_IICA0_CTL.bit8
+                                  000f9f1d         2   unsigned short:1(7)
+      _flag_IICA0_CTL.bit9
+                                  000f9f1d         2   unsigned short:1(6)
+      _flag_IICA0_CTL.bit10
+                                  000f9f1d         2   unsigned short:1(5)
+      _flag_IICA0_CTL.bit11
+                                  000f9f1d         2   unsigned short:1(4)
+      _flag_IICA0_CTL.bit12
+                                  000f9f1d         2   unsigned short:1(3)
+      _flag_IICA0_CTL.bit13
+                                  000f9f1d         2   unsigned short:1(2)
+      _flag_IICA0_CTL.bit14
+                                  000f9f1d         2   unsigned short:1(1)
+      _flag_IICA0_CTL.bit15
+                                  000f9f1d         2   unsigned short:1(0)
+    }
+FILE=_REL_print
+                                  000f9f1e  000f9f9d        80
+  _qt@1@_REL_inmod@1
+                                  000f9f1e        80   data ,l         2
+
+SECTION=.dataR
+FILE=DefaultBuild\custom_func.obj
+                                  000f9f9e  000f9fe4        47
+  _counter_tick
+                                  000f9f9e         2   data ,g         3
+  _btn_counter_tick
+                                  000f9fa0         2   data ,g         3
+  _tx_buffer
+                                  000f9fa2        20   data ,g        31
+  _rx_buffer
+                                  000f9fc2        20   data ,g         b
+  _LOG1@1@loop
+                                  000f9fe2         2   data ,l         2
+  _cnt@2@Button_Process_in_polling
+                                  000f9fe4         1   data ,l         6
+
+Absolute value symbols
+FILE=rlink_generates_06
+  __s.textf
+                                  000002dd         0   none ,g         0
+  __e.textf
+                                  00001b79         0   none ,g         0
+  __s.text
+                                  00000137         0   none ,g         0
+  __e.text
+                                  000002dd         0   none ,g         0
+  __s.const
+                                  00005000         0   none ,g         0
+  __e.const
+                                  000054f3         0   none ,g         0
+  __s.constf
+                                  00000080         0   none ,g         0
+  __e.constf
+                                  00000094         0   none ,g         0
+  __s.data
+                                  000000f0         0   none ,g         0
+  __e.data
+                                  00000137         0   none ,g         0
+  __s.sdata
+                                  00000080         0   none ,g         0
+  __e.sdata
+                                  00000080         0   none ,g         0
+  __s.bss
+                                  000f9f00         0   none ,g         0
+  __e.bss
+                                  000f9f9e         0   none ,g         0
+  __s.sbss
+                                  000ffe20         0   none ,g         0
+  __e.sbss
+                                  000ffe20         0   none ,g         0
+  __s.dataR
+                                  000f9f9e         0   none ,g         0
+  __e.dataR
+                                  000f9fe5         0   none ,g         0
+  __s.sdataR
+                                  000ffe20         0   none ,g         0
+  __e.sdataR
+                                  000ffe20         0   none ,g         0
+  __s.init_array
+                                  00000094         0   none ,g         0
+  __e.init_array
+                                  00000094         0   none ,g         0
+  __s.RLIB
+                                  000000c5         0   none ,g         0
+  __e.RLIB
+                                  000000c5         0   none ,g         0
+  __s.SLIB
+                                  00001b79         0   none ,g         0
+  __e.SLIB
+                                  00004b2f         0   none ,g         0
+  __s.option_byte
+                                  000000c0         0   none ,g         0
+  __e.option_byte
+                                  000000c5         0   none ,g         0
+  __s.monitor1
+                                  000000e6         0   none ,g         0
+  __e.monitor1
+                                  000000f0         0   none ,g         0
+  __s.monitor2
+                                  0003fe00         0   none ,g         0
+  __e.monitor2
+                                  00040000         0   none ,g         0
+  __s.security_id
+                                  000000c6         0   none ,g         0
+  __e.security_id
+                                  000000d6         0   none ,g         0
+  __s.flash_security_id
+                                  000000d6         0   none ,g         0
+  __e.flash_security_id
+                                  000000e6         0   none ,g         0
+  __s.vect
+                                  00000000         0   none ,g         0
+  __e.vect
+                                  00000080         0   none ,g         0
+  __RAM_ADDR_START
+                                  000f9f00         0   none ,g         0
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         0
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         1
+  __STACK_ADDR_END
+                                  000fa500         0   none ,g         1
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Vector Table List ***
+
+ADDRESS  SYMBOL/ADDRESS
+00       _start
+02       ffff
+04       
+06       
+08       _r_Config_INTC_intp0_interrupt@1
+0a       
+0c       
+0e       
+10       
+12       
+14       
+16       _r_Config_UART0_interrupt_send@1
+18       _r_Config_UART0_interrupt_receive@1
+1a       
+1c       
+1e       
+20       
+22       
+24       
+26       
+28       _r_Config_IICA0_interrupt@1
+2a       
+2c       
+2e       _r_Config_TAU0_1_interrupt@1
+30       
+32       
+34       
+36       
+38       
+3a       
+3c       
+3e       
+40       
+42       
+44       
+46       
+48       
+4a       
+4c       
+4e       
+50       
+52       
+54       
+56       
+58       
+5a       
+5c       
+5e       
+60       
+62       
+64       _r_Config_INTC_intp12_interrupt@1
+66       
+68       
+6a       
+6c       
+6e       
+70       
+72       
+74       
+76       
+78       
+7a       
+7c       
+7e       
+
+*** Cross Reference List ***
+
+No   Unit Name   Global.Symbol   Location External Infomation
+---- ----------- --------------- -------- ---------------------
+0001 f24opt
+0002 main
+     SECTION=.textf
+                 _main
+                                 000002dd 0012(000001c5:.text)
+0003 Config_PORT
+     SECTION=.textf
+                 _R_Config_PORT_Create
+                                 000002e7 0007(0000036f:.textf)
+                 _R_Config_PORT_ReadPmnValues
+                                 000002f7
+0004 Config_PORT_user
+     SECTION=.textf
+                 _R_Config_PORT_Create_UserInit
+                                 000002fb 0003(000002f3:.textf)
+0005 Config_TAU0_1
+     SECTION=.textf
+                 _R_Config_TAU0_1_Create
+                                 000002fc 0008(00000388:.textf)
+                 _R_Config_TAU0_1_Start
+                                 0000034d 0017(00000fcc:.textf)
+                 _R_Config_TAU0_1_Stop
+                                 0000035d
+0006 Config_TAU0_1_user
+     SECTION=.textf
+                 _R_Config_TAU0_1_Create_UserInit
+                                 0000036d 0005(00000349:.textf)
+     SECTION=.text
+0007 r_cg_systeminit
+     SECTION=.textf
+                 _R_Systeminit
+                                 0000036e 0009(000003b7:.textf)
+0008 r_cg_tau_common
+     SECTION=.textf
+                 _R_TAU0_Create
+                                 00000383 0007(00000373:.textf)
+                 _R_TAU1_Create
+                                 0000038c
+                 _R_TAU0_Set_PowerOn
+                                 00000391
+                 _R_TAU0_Set_PowerOff
+                                 00000396
+                 _R_TAU1_Set_PowerOn
+                                 0000039b
+                 _R_TAU1_Set_PowerOff
+                                 000003a0
+0009 hdwinit
+     SECTION=.textf
+                 _hdwinit
+                                 000003a5 0010(000003df:.textf)
+0010 r_bsp_init
+     SECTION=.textf
+                 _bsp_init_system
+                                 000003bb 0012(00000161:.text)
+                 _bsp_init_hardware
+                                 000003de 0012(000001c1:.text)
+0011 stkinit
+     SECTION=.textf
+                 _stkinit
+                                 000003e3 0012(0000015d:.text)
+0012 cstart
+     SECTION=.text
+                 _start
+                                 00000151
+                 _exit
+                                 000001c9 0012(000001ca:.text)
+                 _atexit
+                                 000001cb
+     SECTION=.textf
+     SECTION=.const
+     SECTION=.constf
+     SECTION=.data
+     SECTION=.sdata
+     SECTION=.bss
+     SECTION=.sbss
+     SECTION=.dataR
+     SECTION=.sdataR
+     SECTION=.init_array
+     SECTION=.RLIB
+     SECTION=.SLIB
+     SECTION=.dataR
+     SECTION=.sdataR
+0013 r_bsp_common
+     SECTION=.textf
+                 _R_BSP_GetFclkFreqHz
+                                 00000427
+0014 r_bsp_common_ccrl
+     SECTION=.text
+                 _delay_wait
+                                 000001cc
+0015 mcu_clocks
+     SECTION=.textf
+                 _get_fclk_freq_hz
+                                 00000438 0013(0000042a:.textf)
+                 _mcu_clock_setup
+                                 0000064e 0010(000003da:.textf)
+     SECTION=.const
+                 _g_fih_hz
+                                 00005000 0015(00000499:.textf)
+0016 Pin
+     SECTION=.textf
+                 _R_Pins_Create
+                                 000006b2
+0017 custom_func
+     SECTION=.textf
+                 _set_TIMER_PERIOD_1000MS
+                                 000006d9 0017(00000cce:.textf)
+                 _reset_TIMER_PERIOD_1000MS
+                                 000006de 0017(00000cf9:.textf)
+                 _Is_TIMER_PERIOD_1000MS_Trig
+                                 000006e3 0017(00000cf3:.textf)
+                 _btn_get_tick
+                                 000006f0 0017(00000704:.textf)
+                                          0017(00000d8f:.textf)
+                 _btn_set_tick
+                                 000006f8 0017(0000070d:.textf)
+                                          0017(00000d2b:.textf)
+                                          0017(00000db7:.textf)
+                 _btn_tick_counter
+                                 00000700 0017(00000d26:.textf)
+                 _get_tick
+                                 00000711 0017(00000725:.textf)
+                                          0017(00000737:.textf)
+                                          0017(00000745:.textf)
+                                          0017(00000756:.textf)
+                                          0017(0000076f:.textf)
+                                          0017(00000cbf:.textf)
+                                          0017(00000cd1:.textf)
+                 _set_tick
+                                 00000719 0017(0000072e:.textf)
+                 _tick_counter
+                                 00000721 0017(00000cbc:.textf)
+                 _delay_ms
+                                 00000732 0017(000007d9:.textf)
+                                          0017(000007ee:.textf)
+                                          0017(00000865:.textf)
+                                          0017(0000087a:.textf)
+                                          0017(000008db:.textf)
+                                          0017(000008f0:.textf)
+                                          0017(00000951:.textf)
+                                          0017(00000966:.textf)
+                                          0017(000009c7:.textf)
+                                          0017(000009dc:.textf)
+                                          0017(00000a3d:.textf)
+                                          0017(00000a52:.textf)
+                                          0017(00000ac9:.textf)
+                                          0017(00000ade:.textf)
+                                          0017(00000b3f:.textf)
+                                          0017(00000b54:.textf)
+                                          0017(00000bb5:.textf)
+                                          0017(00000bca:.textf)
+                                          0017(00000c2b:.textf)
+                                          0017(00000c40:.textf)
+                                          0017(00000ca1:.textf)
+                                          0017(00000cb6:.textf)
+                 _IICA0_send_seq_cmd
+                                 0000077f 0017(00000d51:.textf)
+                 _Timer_1ms_IRQ
+                                 00000cbb 0006(00000142:.text)
+                 _LED_Toggle
+                                 00000cd7 0017(00000d17:.textf)
+                 _loop
+                                 00000cf0 0002(000002e2:.textf)
+                 _Button_Process_long_counter
+                                 00000d1f 0017(00000cd4:.textf)
+                 _Button_Process_in_polling
+                                 00000d2e 0017(00000d1a:.textf)
+                 _Button_Process_in_IRQ
+                                 00000dc3 0023(00000298:.text)
+                 _UARTx_Process
+                                 00000dc8 0020(000013d6:.textf)
+                 _check_reset_source
+                                 00000e78
+                 __reset_by_illegal_instruction
+                                 00000f63 0017(00000f9d:.textf)
+                 __reset_by_illegal_memory_access
+                                 00000f79 0017(00000fa2:.textf)
+                 _RL78_soft_reset
+                                 00000f8c 0017(00000e69:.textf)
+                                          0017(00000e70:.textf)
+                 _putchar
+                                 00000fa8 0031(00001be4:.SLIB)
+                                          0031(00001c5b:.SLIB)
+                                          0032(00001c9f:.SLIB)
+                                          0032(00001d16:.SLIB)
+                 _hardware_init
+                                 00000fc2 0002(000002de:.textf)
+     SECTION=.const
+                 _device_addr
+                                 00005080 0017(000007cb:.textf)
+                                          0017(000007dc:.textf)
+                                          0017(00000857:.textf)
+                                          0017(00000868:.textf)
+                                          0017(000008cd:.textf)
+                                          0017(000008de:.textf)
+                                          0017(00000943:.textf)
+                                          0017(00000954:.textf)
+                                          0017(000009b9:.textf)
+                                          0017(000009ca:.textf)
+                                          0017(00000a2f:.textf)
+                                          0017(00000a40:.textf)
+                                          0017(00000abb:.textf)
+                                          0017(00000acc:.textf)
+                                          0017(00000b31:.textf)
+                                          0017(00000b42:.textf)
+                                          0017(00000ba7:.textf)
+                                          0017(00000bb8:.textf)
+                                          0017(00000c1d:.textf)
+                                          0017(00000c2e:.textf)
+                                          0017(00000c93:.textf)
+                                          0017(00000ca4:.textf)
+                 _Reserved
+                                 00005081 0017(000007c8:.textf)
+                                          0017(00000854:.textf)
+                                          0017(000008ca:.textf)
+                                          0017(00000940:.textf)
+                                          0017(000009b6:.textf)
+                                          0017(00000a2c:.textf)
+                                          0017(00000ab8:.textf)
+                                          0017(00000b2e:.textf)
+                                          0017(00000ba4:.textf)
+                                          0017(00000c1a:.textf)
+                                          0017(00000c90:.textf)
+     SECTION=.bss
+                 _flag_PROJ_CTL
+                                 000f9f00 0017(000006db:.textf)
+                                          0017(000006e0:.textf)
+                                          0017(000006e5:.textf)
+                                          0017(00000d20:.textf)
+                                          0017(00000d31:.textf)
+                                          0017(00000d5a:.textf)
+                                          0017(00000d66:.textf)
+                                          0017(00000d85:.textf)
+                                          0017(00000dbb:.textf)
+                                          0017(00000dc5:.textf)
+                                          0017(00000e45:.textf)
+                                          0017(00000e4c:.textf)
+                                          0017(00000e53:.textf)
+                                          0017(00000e5a:.textf)
+                                          0017(00000e61:.textf)
+     SECTION=.dataR
+                 _counter_tick
+                                 000f9f9e 0017(00000713:.textf)
+                                          0017(0000071d:.textf)
+                                          0017(00000722:.textf)
+                 _btn_counter_tick
+                                 000f9fa0 0017(000006f2:.textf)
+                                          0017(000006fc:.textf)
+                                          0017(00000701:.textf)
+                 _tx_buffer
+                                 000f9fa2 0017(000007a1:.textf)
+                                          0017(000007a7:.textf)
+                                          0017(000007b2:.textf)
+                                          0017(000007c0:.textf)
+                                          0017(000007ce:.textf)
+                                          0017(000007fe:.textf)
+                                          0017(00000804:.textf)
+                                          0017(00000822:.textf)
+                                          0017(0000083e:.textf)
+                                          0017(0000084c:.textf)
+                                          0017(0000085a:.textf)
+                                          0017(00000898:.textf)
+                                          0017(000008b4:.textf)
+                                          0017(000008c2:.textf)
+                                          0017(000008d0:.textf)
+                                          0017(0000090e:.textf)
+                                          0017(0000092a:.textf)
+                                          0017(00000938:.textf)
+                                          0017(00000946:.textf)
+                                          0017(00000984:.textf)
+                                          0017(000009a0:.textf)
+                                          0017(000009ae:.textf)
+                                          0017(000009bc:.textf)
+                                          0017(000009fa:.textf)
+                                          0017(00000a16:.textf)
+                                          0017(00000a24:.textf)
+                                          0017(00000a32:.textf)
+                                          0017(00000a62:.textf)
+                                          0017(00000a68:.textf)
+                                          0017(00000a86:.textf)
+                                          0017(00000aa2:.textf)
+                                          0017(00000ab0:.textf)
+                                          0017(00000abe:.textf)
+                                          0017(00000afc:.textf)
+                                          0017(00000b18:.textf)
+                                          0017(00000b26:.textf)
+                                          0017(00000b34:.textf)
+                                          0017(00000b72:.textf)
+                                          0017(00000b8e:.textf)
+                                          0017(00000b9c:.textf)
+                                          0017(00000baa:.textf)
+                                          0017(00000be8:.textf)
+                                          0017(00000c04:.textf)
+                                          0017(00000c12:.textf)
+                                          0017(00000c20:.textf)
+                                          0017(00000c5e:.textf)
+                                          0017(00000c7a:.textf)
+                                          0017(00000c88:.textf)
+                                          0017(00000c96:.textf)
+                 _rx_buffer
+                                 000f9fc2 0017(000007e2:.textf)
+                                          0017(0000086e:.textf)
+                                          0017(000008e4:.textf)
+                                          0017(0000095a:.textf)
+                                          0017(000009d0:.textf)
+                                          0017(00000a46:.textf)
+                                          0017(00000ad2:.textf)
+                                          0017(00000b48:.textf)
+                                          0017(00000bbe:.textf)
+                                          0017(00000c34:.textf)
+                                          0017(00000caa:.textf)
+     SECTION=.data
+0018 misc_config
+     SECTION=.textf
+                 _compare_buffer
+                                 00000ff4
+                 _reset_buffer
+                                 00001093
+                 _copy_buffer
+                                 000010bb
+                 _dump_buffer
+                                 000010ef
+                 _dump_buffer_hex
+                                 00001170
+     SECTION=.bss
+                 _flag_MISC_CTL
+                                 000f9f04 0018(00001047:.textf)
+                                          0018(00001057:.textf)
+                                          0018(0000108e:.textf)
+     SECTION=.const
+0019 Config_UART0
+     SECTION=.textf
+                 _R_Config_UART0_Create
+                                 00001290 0021(000013e0:.textf)
+                 _R_Config_UART0_Start
+                                 0000131b 0017(00000fc8:.textf)
+                 _R_Config_UART0_Stop
+                                 00001343
+                 _R_Config_UART0_Send
+                                 00001362
+                 _R_Config_UART0_Receive
+                                 0000139c
+     SECTION=.bss
+                 _gp_uart0_tx_address
+                                 000f9f06 0019(0000137c:.textf)
+                                          0019(00001387:.textf)
+                                          0019(0000138d:.textf)
+                                          0020(000001ea:.text)
+                                          0020(000001f0:.text)
+                 _g_uart0_tx_count
+                                 000f9f08 0019(00001381:.textf)
+                                          0019(00001390:.textf)
+                                          0020(000001e3:.text)
+                                          0020(000001f3:.text)
+                 _gp_uart0_rx_address
+                                 000f9f0a 0019(000013bf:.textf)
+                                          0020(00000247:.text)
+                                          0020(0000024d:.text)
+                 _g_uart0_rx_count
+                                 000f9f0c 0019(000013b5:.textf)
+                                          0020(00000241:.text)
+                                          0020(00000250:.text)
+                                          0020(00000256:.text)
+                 _g_uart0_rx_length
+                                 000f9f0e 0019(000013ba:.textf)
+                                          0020(0000023e:.text)
+                                          0020(00000253:.text)
+0020 Config_UART0_user
+     SECTION=.textf
+                 _R_Config_UART0_Create_UserInit
+                                 000013c8 0019(00001317:.textf)
+     SECTION=.text
+0021 r_cg_sau_common
+     SECTION=.textf
+                 _R_SAU0_Create
+                                 000013db 0007(00000377:.textf)
+                 _R_SAU1_Create
+                                 000013e4
+                 _R_SAU0_Set_PowerOn
+                                 000013e9
+                 _R_SAU0_Set_PowerOff
+                                 000013ee
+                 _R_SAU1_Set_PowerOn
+                                 000013f3
+                 _R_SAU1_Set_PowerOff
+                                 000013f8
+0022 Config_INTC
+     SECTION=.textf
+                 _R_Config_INTC_Create
+                                 000013fd 0007(0000037b:.textf)
+                 _R_Config_INTC_INTP0_Start
+                                 0000142d 0017(00000fd0:.textf)
+                 _R_Config_INTC_INTP0_Stop
+                                 00001434
+                 _R_Config_INTC_INTP12_Start
+                                 0000143b
+                 _R_Config_INTC_INTP12_Stop
+                                 00001442
+0023 Config_INTC_user
+     SECTION=.textf
+                 _R_Config_INTC_Create_UserInit
+                                 00001449 0022(00001429:.textf)
+     SECTION=.text
+0024 Config_IICA0
+     SECTION=.textf
+                 _R_Config_IICA0_Create
+                                 0000144a 0007(0000037f:.textf)
+                 _R_Config_IICA0_Stop
+                                 000014b3
+                 _R_Config_IICA0_StopCondition
+                                 000014b8 0028(000018cc:.textf)
+                 _R_Config_IICA0_Master_Send
+                                 000014bd 0028(00001889:.textf)
+                 _R_Config_IICA0_Master_Receive
+                                 00001537 0028(0000183f:.textf)
+     SECTION=.bss
+                 _g_iica0_master_status_flag
+                                 000f9f10 0024(00001525:.textf)
+                                          0024(000015a3:.textf)
+                                          0025(000015f7:.textf)
+                                          0025(0000160b:.textf)
+                                          0025(0000160e:.textf)
+                 _gp_iica0_rx_address
+                                 000f9f12 0024(000015a0:.textf)
+                                          0025(0000169b:.textf)
+                                          0025(000016a1:.textf)
+                 _g_iica0_rx_len
+                                 000f9f14 0024(00001597:.textf)
+                                          0025(00001696:.textf)
+                                          0025(000016aa:.textf)
+                 _g_iica0_rx_cnt
+                                 000f9f16 0024(0000159b:.textf)
+                                          0025(00001693:.textf)
+                                          0025(000016a4:.textf)
+                                          0025(000016a7:.textf)
+                 _gp_iica0_tx_address
+                                 000f9f18 0024(00001522:.textf)
+                                          0025(00001625:.textf)
+                                          0025(0000162b:.textf)
+                                          0025(00001680:.textf)
+                                          0025(00001686:.textf)
+                 _g_iica0_tx_cnt
+                                 000f9f1a 0024(0000151d:.textf)
+                                          0025(000015dc:.textf)
+                                          0025(0000161e:.textf)
+                                          0025(0000162e:.textf)
+                                          0025(0000165c:.textf)
+                                          0025(00001679:.textf)
+                                          0025(00001689:.textf)
+0025 Config_IICA0_user
+     SECTION=.textf
+                 _R_Config_IICA0_Create_UserInit
+                                 000015b5 0024(000014af:.textf)
+     SECTION=.text
+0026 r_cg_iica_common
+     SECTION=.textf
+                 _R_IICA0_Set_PowerOn
+                                 000016c7
+                 _R_IICA0_Set_PowerOff
+                                 000016cc
+0027 CRC8_SAE_J1850_ZERO
+     SECTION=.textf
+                 _Utils_BitReflect
+                                 000016d1 0027(00001792:.textf)
+                                          0027(000017e4:.textf)
+                 _Crc8Base
+                                 00001753 0027(0000181e:.textf)
+                 _Crc8_saeJ1850Zero
+                                 00001800 0017(000007b5:.textf)
+                                          0017(00000841:.textf)
+                                          0017(000008b7:.textf)
+                                          0017(0000092d:.textf)
+                                          0017(000009a3:.textf)
+                                          0017(00000a19:.textf)
+                                          0017(00000aa5:.textf)
+                                          0017(00000b1b:.textf)
+                                          0017(00000b91:.textf)
+                                          0017(00000c07:.textf)
+                                          0017(00000c7d:.textf)
+     SECTION=.const
+0028 simple_i2c_driver
+     SECTION=.textf
+                 _drv_IICA0_read
+                                 00001827 0028(000019d6:.textf)
+                 _drv_IICA0_write
+                                 00001871 0028(00001944:.textf)
+                                          0028(00001aeb:.textf)
+                 _drv_Is_IICA0_bus_busy
+                                 000018bb 0028(000019b6:.textf)
+                                          0028(00001a24:.textf)
+                                          0028(00001b5b:.textf)
+                 _drv_IICA0_callback_error
+                                 000018c7 0025(000015d0:.textf)
+                 _drv_set_IICA0_receive_flag
+                                 000018e9 0025(000015c6:.textf)
+                                          0028(000019cb:.textf)
+                 _drv_get_IICA0_receive_flag
+                                 000018f5 0028(00001a1e:.textf)
+                 _drv_set_IICA0_send_flag
+                                 00001902 0025(000015bc:.textf)
+                                          0028(00001936:.textf)
+                                          0028(00001adc:.textf)
+                 _drv_get_IICA0_send_flag
+                                 0000190e 0028(000019b0:.textf)
+                                          0028(00001b55:.textf)
+                 _IICA0_read
+                                 0000191b 0017(000007e6:.textf)
+                                          0017(00000872:.textf)
+                                          0017(000008e8:.textf)
+                                          0017(0000095e:.textf)
+                                          0017(000009d4:.textf)
+                                          0017(00000a4a:.textf)
+                                          0017(00000ad6:.textf)
+                                          0017(00000b4c:.textf)
+                                          0017(00000bc2:.textf)
+                                          0017(00000c38:.textf)
+                                          0017(00000cae:.textf)
+                 _IICA0_write
+                                 00001a64 0017(000007d1:.textf)
+                                          0017(0000085d:.textf)
+                                          0017(000008d3:.textf)
+                                          0017(00000949:.textf)
+                                          0017(000009bf:.textf)
+                                          0017(00000a35:.textf)
+                                          0017(00000ac1:.textf)
+                                          0017(00000b37:.textf)
+                                          0017(00000bad:.textf)
+                                          0017(00000c23:.textf)
+                                          0017(00000c99:.textf)
+     SECTION=.bss
+                 _flag_IICA0_CTL
+                                 000f9f1c 0028(000018ef:.textf)
+                                          0028(000018f7:.textf)
+                                          0028(00001908:.textf)
+                                          0028(00001910:.textf)
+     SECTION=.const
+0029 _COM_lshl
+     SECTION=.SLIB
+                 __COM_lshl
+                                 00001b82 0027(0000170c:.textf)
+0030 memset
+     SECTION=.SLIB
+                 _memset
+                                 00001b94 0028(00001a81:.textf)
+0031 printf
+     SECTION=.SLIB
+                 _printf
+                                 00001ba2 0017(00000d12:.textf)
+                                          0017(00000d4c:.textf)
+                                          0017(00000db2:.textf)
+                                          0017(00000de1:.textf)
+                                          0017(00000dfb:.textf)
+                                          0017(00000e91:.textf)
+                                          0017(00000eab:.textf)
+                                          0017(00000ec4:.textf)
+                                          0017(00000edd:.textf)
+                                          0017(00000ef6:.textf)
+                                          0017(00000f0f:.textf)
+                                          0017(00000f28:.textf)
+                                          0017(00000f41:.textf)
+                                          0017(00000f5a:.textf)
+                                          0017(00000fee:.textf)
+                                          0018(00001040:.textf)
+                                          0018(00001078:.textf)
+                                          0018(00001089:.textf)
+                                          0018(0000110b:.textf)
+                                          0018(0000112f:.textf)
+                                          0018(0000114c:.textf)
+                                          0018(0000116a:.textf)
+                                          0018(0000118f:.textf)
+                                          0018(000011b7:.textf)
+                                          0018(000011d7:.textf)
+                                          0018(00001232:.textf)
+                                          0018(00001246:.textf)
+                                          0018(00001271:.textf)
+                                          0018(0000128a:.textf)
+0032 printf_tiny
+     SECTION=.SLIB
+                 _printf_tiny
+                                 00001c5f 0028(0000185c:.textf)
+                                          0028(000018a6:.textf)
+                                          0028(000018e2:.textf)
+                                          0028(00001960:.textf)
+                                          0028(000019a2:.textf)
+                                          0028(00001a11:.textf)
+                                          0028(00001a4f:.textf)
+                                          0028(00001aa3:.textf)
+                                          0028(00001b07:.textf)
+                                          0028(00001b48:.textf)
+0033 _REL_print
+     SECTION=.SLIB
+                 __REL_print
+                                 00001d1a 0031(00001c37:.SLIB)
+     SECTION=.constf
+     SECTION=.bss
+0034 _REL_print_tiny
+     SECTION=.SLIB
+                 __REL_print_tiny
+                                 00003d10 0032(00001cf2:.SLIB)
+0035 _COM_fdiv
+     SECTION=.SLIB
+                 __COM_fdiv
+                                 0000436d 0033(00002866:.SLIB)
+                                          0033(00003391:.SLIB)
+0036 _COM_feq
+     SECTION=.SLIB
+                 __COM_feq
+                                 0000443c 0033(000027fb:.SLIB)
+                                          0040(00004574:.SLIB)
+0037 _COM_fge
+     SECTION=.SLIB
+                 __COM_fge
+                                 00004452 0033(00002886:.SLIB)
+                                          0033(000033ab:.SLIB)
+0038 _COM_flt
+     SECTION=.SLIB
+                 __COM_flt
+                                 00004468 0033(0000280f:.SLIB)
+                                          0033(00002848:.SLIB)
+                                          0033(0000334a:.SLIB)
+                                          0033(0000337a:.SLIB)
+0039 _COM_fmul
+     SECTION=.SLIB
+                 __COM_fmul
+                                 000044c9 0033(00002828:.SLIB)
+                                          0033(00002f51:.SLIB)
+                                          0033(00003360:.SLIB)
+0040 _COM_fne
+     SECTION=.SLIB
+                 __COM_fne
+                                 0000456b 0033(0000298d:.SLIB)
+                                          0033(00002ef2:.SLIB)
+                                          0033(00003333:.SLIB)
+0041 _COM_ftosl
+     SECTION=.SLIB
+                 __COM_ftosl
+                                 0000457c 0033(00002f67:.SLIB)
+0042 _COM_sidiv
+     SECTION=.SLIB
+                 __COM_sidiv
+                                 00004586 0033(000034be:.SLIB)
+0043 _COM_sirem
+     SECTION=.SLIB
+                 __COM_sirem
+                                 000045a6 0033(000034a0:.SLIB)
+0044 _COM_ulldiv
+     SECTION=.SLIB
+                 __COM_ulldiv
+                                 000045c6 0033(000022c7:.SLIB)
+0045 _COM_ullrem
+     SECTION=.SLIB
+                 __COM_ullrem
+                                 000045f0 0033(00002293:.SLIB)
+0046 isdigit
+     SECTION=.SLIB
+                 _isdigit
+                                 00004621 0033(00001dca:.SLIB)
+                                          0033(00001e05:.SLIB)
+                                          0033(00001ec4:.SLIB)
+                                          0034(00003d90:.SLIB)
+0047 _REL_f_inf
+     SECTION=.SLIB
+                 __REL_f_inf
+                                 0000462b 0035(00004357:.SLIB)
+                                          0035(000043f7:.SLIB)
+                                          0039(0000449b:.SLIB)
+                                          0039(0000453e:.SLIB)
+0048 _REL_f_norm
+     SECTION=.SLIB
+                 __REL_f_norm
+                                 00004633 0035(00004338:.SLIB)
+                                          0035(00004363:.SLIB)
+                                          0039(000044bc:.SLIB)
+0049 _REL_f_round
+     SECTION=.SLIB
+                 __REL_f_round
+                                 00004643 0035(00004439:.SLIB)
+                                          0039(0000454b:.SLIB)
+0050 _REL_fcmp
+     SECTION=.SLIB
+                 __REL_fcmp
+                                 00004656 0036(00004446:.SLIB)
+                                          0037(0000445c:.SLIB)
+                                          0038(00004472:.SLIB)
+0051 _REL_fordered_core
+     SECTION=.SLIB
+                 __REL_fordered_core
+                                 0000468e 0036(0000443f:.SLIB)
+                                          0037(00004455:.SLIB)
+                                          0038(0000446b:.SLIB)
+0052 _REL_ftol
+     SECTION=.SLIB
+                 __REL_ftol
+                                 000046aa 0041(0000457d:.SLIB)
+0053 _REL_lldiv
+     SECTION=.SLIB
+                 __REL_lldiv
+                                 000046fb 0044(000045ed:.SLIB)
+0054 _REL_llrem
+     SECTION=.SLIB
+                 __REL_llrem
+                                 00004902 0045(0000461e:.SLIB)
+0055 _REL_ltosl
+     SECTION=.SLIB
+                 __REL_ltosl
+                                 00004ae9 0041(00004581:.SLIB)
+0056 _COM_lshr
+     SECTION=.SLIB
+                 __COM_lshr
+                                 00004b18 0052(000046d6:.SLIB)
+0057 rlink_generates_01
+     SECTION=.option_byte
+0058 rlink_generates_02
+     SECTION=.monitor1
+     SECTION=.monitor2
+0059 rlink_generates_03
+     SECTION=.security_id
+0060 rlink_generates_04
+     SECTION=.flash_security_id
+0061 rlink_generates_05
+     SECTION=.vect
+0062 rlink_generates_06
+     SECTION=
+                 __s.vect
+                                 00000000
+                 __s.constf
+                                 00000080
+                 __s.sdata
+                                 00000080
+                 __e.sdata
+                                 00000080
+                 __e.vect
+                                 00000080
+                 __e.constf
+                                 00000094
+                 __s.init_array
+                                 00000094
+                 __e.init_array
+                                 00000094
+                 __s.option_byte
+                                 000000c0
+                 __s.RLIB
+                                 000000c5
+                 __e.RLIB
+                                 000000c5
+                 __e.option_byte
+                                 000000c5
+                 __s.security_id
+                                 000000c6
+                 __e.security_id
+                                 000000d6
+                 __s.flash_security_id
+                                 000000d6
+                 __s.monitor1
+                                 000000e6
+                 __e.flash_security_id
+                                 000000e6
+                 __s.data
+                                 000000f0
+                 __e.monitor1
+                                 000000f0
+                 __s.text
+                                 00000137
+                 __e.data
+                                 00000137
+                 __s.textf
+                                 000002dd
+                 __e.text
+                                 000002dd
+                 __e.textf
+                                 00001b79
+                 __s.SLIB
+                                 00001b79
+                 __e.SLIB
+                                 00004b2f
+                 __s.const
+                                 00005000
+                 __e.const
+                                 000054f3
+                 __s.monitor2
+                                 0003fe00
+                 __e.monitor2
+                                 00040000
+                 __s.bss
+                                 000f9f00
+                 __RAM_ADDR_START
+                                 000f9f00
+                 __e.bss
+                                 000f9f9e
+                 __s.dataR
+                                 000f9f9e
+                 __e.dataR
+                                 000f9fe5
+                 __STACK_ADDR_END
+                                 000fa500 0012(0000015a:.text)
+                 __s.sbss
+                                 000ffe20
+                 __e.sbss
+                                 000ffe20
+                 __s.sdataR
+                                 000ffe20
+                 __e.sdataR
+                                 000ffe20
+                 __STACK_ADDR_START
+                                 000ffe20 0012(00000157:.text)
+                 __RAM_ADDR_END
+                                 000ffee0
