@@ -393,7 +393,7 @@ void loop(void)
 
     if (FLAG_PROJ_TIMER_PERIOD_1000MS)
     {
-        LAG_PROJ_TIMER_PERIOD_1000MS = 0;
+        FLAG_PROJ_TIMER_PERIOD_1000MS = 0;
 
         printf("log(timer):%4d\r\n",LOG1++);
         LED_Toggle();             
